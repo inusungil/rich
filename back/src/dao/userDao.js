@@ -24,7 +24,7 @@ exports.insertUser = async function(email, password, nickname){
         }
 
     } catch(err){
-        conseol.error(" #### insertUser DB error #### \n ${err}");
+        console.error(" #### insertUser DB error #### \n ${err}");
         return false;
 
     }
@@ -81,7 +81,7 @@ exports.selectUser = async function(email, password){
         }
 
     } catch(err){
-        conseol.error(" #### selectUser DB error #### \n ${err}");
+        console.error(" #### selectUser DB error #### \n ${err}");
         return false;
 
     }
@@ -110,7 +110,7 @@ exports.selectNicknameByUserIdx =async function(userIdx){
         }
 
     } catch(err){
-        conseol.error(`#### selectNicknameByUserIdx DB error #### \n ${err}`);
+        console.error(`#### selectNicknameByUserIdx DB error #### \n ${err}`);
         return false;
 
     }
